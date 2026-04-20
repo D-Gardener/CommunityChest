@@ -13,6 +13,6 @@ contract CommunityChest {
 
     function withdraw() public {
         (bool sent, ) = msg.sender.call{ value: address(this).balance }("");
-        require(sent);
+        require(sent, "Transfer failed");
     }
 }

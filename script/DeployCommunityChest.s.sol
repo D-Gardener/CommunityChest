@@ -11,5 +11,4 @@ contract DeployCommunityChest is Script {
         vm.stopBroadcast();
         return communityChest;
     }
-
 }
